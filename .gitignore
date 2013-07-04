@@ -1,3 +1,20 @@
-logs/*
-.gitkeep
-!.idea/*
+# Platform specific junk
+.settings
+.project
+Thumbs.db
+
+# Developer Credentials
+mycreds.js
+
+build
+doc
+
+# Minified files
+index.min.html
+mmm.min.js
+
+.idea/*
+.idea/workspace.xml
+
+# Files that appear out of nowhere (I blame Skynet)
+js/vendor/angular-1.0.5/docs/*
