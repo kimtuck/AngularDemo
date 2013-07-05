@@ -28,3 +28,39 @@
   content: "";
   padding: 0;
 }
+
+.badgeOuter {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border: 6px solid #4169e1;
+    width: 700px;
+    height: 500px;
+    position:  relative;
+}
+
+.badgeInner {
+    padding: 20px;
+    }
+
+.text {
+    font-size: 64px;
+    font-family: arial;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.name {
+    font-size: 1.4em;
+    color: blue;
+    padding: 30px;
+}
+
+.logo {
+    background-image: url("SDG-Logo-Small.png");
+    width: 75px;
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
