@@ -1,7 +1,15 @@
 <div ng-form>
     <fieldset ng-hide="done">
-        <label for="Date">Date</label><input type="text" id="Date" ng-model="Date"/>
-        <label for="Subject">Subject</label><input id="Subject" ng-model="Subject">
+        <div>
+            <i class="icon-calendar"></i>
+            <label for="Date">Date</label>
+            <input type="text" id="Date" ng-model="Date" placeholder="date"/>
+        </div>
+        <div>
+            <i class="icon-plus"></i>
+            <label for="Subject">Subject</label>
+            <input id="Subject" ng-model="Subject" placeholder="item" />
+        </div>
         <button type="submit" ng-click="addItem()">Set</button>
     </fieldset>
  </div>

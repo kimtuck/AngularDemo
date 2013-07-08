@@ -64,3 +64,8 @@
     top: 30px;
     left: 30px;
 }
+
+fieldset div i, fieldset div label, fieldset div input {
+    display: inline-block;
+}
+label { border: solid green 1px; }
