@@ -1,15 +1,30 @@
-<div ng-form>
-    <fieldset ng-hide="done">
-        <div>
-            <i class="icon-calendar"></i>
-            <label for="Date">Date</label>
-            <input type="text" id="Date" ng-model="Date" placeholder="date"/>
-        </div>
-        <div>
-            <i class="icon-plus"></i>
-            <label for="Subject">Subject</label>
-            <input id="Subject" ng-model="Subject" placeholder="item" />
-        </div>
-        <button type="submit" ng-click="addItem()">Set</button>
-    </fieldset>
- </div>
+<div class="row">
+    <div class="span12">
+        <button class="btn" ng-click="showForm=true" ng-hide="showForm">Add</button>
+        <form class="form-horizontal" ng-show="showForm">
+            <fieldset>
+                <legend>Add Todo Item</legend>
+
+                <div class="control-group">
+                    <label class="control-label" for="Subject">Subject</label>
+                    <div class="controls">
+                        <input type="text" class="input-xlarge" id="Subject" ng-model="Subject" placeholder="Subject" required>
+                    </div>
+                </div>
+
+                <div class="control-group input-append">
+                    <label class="control-label" for="Date">Date</label>
+                    <div class="controls">
+                        <input type="text" ng-model="Date" id="Date" name="Date" placeholder="Date" required data-date-format="mm/dd/yyyy" class="input-small criterion-value" ng-pattern="/^(?:[0]?[1-9]|[1][012])[\/](?:(?:[0-2]?[0-9]{1})|(?:[3][01]{1}))[\/](?:(?:[1]{1}[0-9]{1}[0-9]{1}[0-9]{1})|(?:[2]{1}[0-9]{3}))(?![[0-9]])$/" bs-datepicker />
+                        <div class="control-group error help-inline"  ng-hide='Date.length > 0'>
+                            <span class="help-inline">Valid date is required</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <button class="btn " type="submit" ng-click="addItem()">Set</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

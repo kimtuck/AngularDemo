@@ -13,5 +13,12 @@ myApp.service("ToDoService", [
         this.ToDoItems = [];
         this.addItem('8/1/2013', "Pay mortgage");
         this.addItem('8/2/2013', "Complete July Expense Report");
+
+        this.removeItem = function(item) {
+            debugger
+            var index = _.indexOf(this.ToDoItems,item);
+            if (index > -1)
+                this.ToDoItems.splice(index,1);
+        }
     }
 ]);

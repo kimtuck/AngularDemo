@@ -5,6 +5,7 @@ myApp.directive('toDoItemForm', ["ToDoService",
             link:function(scope, element) {
                 scope.addItem = function() {
                     ToDoService.addItem(scope.Date,scope.Subject);
+                    scope.showForm=false;
                 }
             }
         };

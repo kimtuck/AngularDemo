@@ -65,7 +65,23 @@
     left: 30px;
 }
 
-fieldset div i, fieldset div label, fieldset div input {
-    display: inline-block;
+form {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    background-color: #87ceeb;
 }
-label { border: solid green 1px; }
+
+*[class^="icon-"] {
+    width: 1em;
+    padding-right: 10px;
+    float: left;
+}
+
+.input-append {
+    font-size: 1em;
+}
